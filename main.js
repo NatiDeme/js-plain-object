@@ -1,32 +1,41 @@
 const books = [];
 const add = document.getElementById("add");
+const titlei = document.querySelector(".title");
+const authori = document.querySelector("#author");
+const bookForm = document.querySelector(".bookForm");
 
-// add.addEventListener(event)
 
 class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
   }
+
+  populateLocalStorage = () => {
+    const books = this.getBooks();
+    if (!books) {
+      localStorage.setItem("books", JSON.stringify([]));
+      return books || [];
+    }
+
+    getBooks = () => {
+      const books = JSON.parse(localStorage.getItem("books"));
+      return books || [];
+    };
+  };
+
+  addBook = (book) => {
+    const books = this.getBooks();
+    books.push(book);
+    localStorage.setItem("books", JSON.stringify(books));
+  };
 }
 
-populateLocalStorage = () => {
-  const books = this.getBooks();
-  if (!books) {
-    localStorage.setItem("books", JSON.stringify([]));
-    return books || [];
-  }
 
-  getBooks = () => {
-    const books = JSON.parse(localStorage.getItem("books"));
-    return books || [];
-  };
-};
-
-const booksSection = document.getElementById("books");
-const booksList = document.createElement("div");
-booksList.className = "list";
-let booksElement = "";
+// const booksSection = document.getElementById("books");
+// const booksList = document.createElement("div");
+// booksList.className = "list";
+// let booksElement = "";
 
 // const newObject = {};
 // // eslint-disable-next-line no-unused-vars
@@ -46,14 +55,11 @@ let booksElement = "";
 //   }
 // }
 
-booksSection.appendChild(booksList);
-booksList.innerHTML += booksElement;
-
-const book = new Book(inputTitle.value, inputAuthor.value);
+const book = new Book(titlei.value, authori.value);
 
 bookForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const book = new Book(inputTitle.value, inputAuthor.value);
+  const book = new Book(titlei.value, authori.value);
   const { title, author } = book;
   const id = Math.round(Math.random() * 10000000);
 
@@ -65,8 +71,7 @@ bookForm.addEventListener("submit", (e) => {
 
   if (title && author) {
     book.addBook(newObject);
-    bookForm.reset();
-    book.showBook();
+    // book.showBook();
   }
 });
 
