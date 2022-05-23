@@ -1,14 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books Projects!
 
 > Description the project.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
+- JS
+- eslint
 - Technologies used
 
 ## Live Demo (if available)
