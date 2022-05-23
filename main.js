@@ -1,4 +1,3 @@
-const add = document.getElementById('add');
 const titlei = document.querySelector('.title');
 const authori = document.querySelector('#author');
 const bookForm = document.querySelector('.bookForm');
@@ -13,13 +12,11 @@ class Book {
     const books = this.getBooks();
     if (!books) {
       localStorage.setItem('books', JSON.stringify([]));
-      return books || [];
     }
   };
 
   getBooks = () => {
     const books = JSON.parse(localStorage.getItem('books'));
-    console.log(books);
     return books || [];
   };
 
@@ -58,7 +55,6 @@ class Book {
               <hr>
             </div>
     `;
-     console.log(books[i].id);
       booksSection.appendChild(booksList);
       booksList.innerHTML += booksElement;
       const remove = document.querySelectorAll('.remove');
@@ -73,13 +69,6 @@ class Book {
     }
   };
 }
-
-// const newObject = {};
-// // eslint-disable-next-line no-unused-vars
-// function addElement() {
-//   newObject.title = document.getElementById('title').value;
-//   newObject.author = document.getElementById('author').value;
-//   books.push(newObject);
 
 const book = new Book(titlei.value, authori.value);
 
