@@ -2,3 +2,79 @@
   padding: 0;
   margin: 0;
 }
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booksList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  height: 50px;
+}
+
+.booksList p {
+  font-size: 25px;
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+}
+
+.remove {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+#books {
+  height: 18.75rem;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.whole-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 0.9375rem 0;
+}
+
+.bookForm {
+  display: flex;
+  align-content: center;
+}
+
+.bookForm button {
+  margin-top: 0.625rem;
+  padding: 0.4375rem;
+  background-color: black;
+  color: azure;
+  border-radius: 0.25rem;
+  width: 6.25rem;
+}
+
+.bookForm input {
+  background-color: darkgray;
+  height: 30px;
+}
+
+.bookForm input::placeholder {
+  color: black;
+}
