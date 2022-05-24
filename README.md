@@ -1,11 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+
 # Awesome Books Pair programming!
 
 > This is a project create by me and @NatiDeme!
 
 
 ## Built With
+
 
 - Js
 - Using linters (Eslint)
@@ -20,6 +22,8 @@
 
 # This is a project with the API theme of favorite books and storage of those values on the interface and within local storage!
 
+# If you would like to clone it, go ahead and copy the ssh or https from the code drop down bar, and then make it your own!
+Either that or a fork!
 
 ### Prerequisites
 
