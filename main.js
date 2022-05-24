@@ -3,28 +3,27 @@ const authori = document.querySelector('#author');
 const bookForm = document.querySelector('.bookForm');
 
 class Book {
-  constructor(title, author, books) {
+  constructor(title, author) {
     this.title = title;
     this.author = author;
-    this.books = books;
   }
 
   populateLocalStorage = () => {
     const books = this.getBooks();
     if (!books) {
-      localStorage.setItem(this.books, JSON.stringify([]));
+      localStorage.setItem('books', JSON.stringify([]));
     }
   };
 
   getBooks = () => {
-    const books = JSON.parse(localStorage.getItem(this.books));
+    const books = JSON.parse(localStorage.getItem('books'));
     return books || [];
   };
 
   addBook = (book) => {
     const books = this.getBooks();
     books.push(book);
-    localStorage.setItem('books', JSON.stringify(this.books));
+    localStorage.setItem('books', JSON.stringify(books));
   };
 
   removeBookFromLocalStorage = (id) => {
@@ -35,7 +34,7 @@ class Book {
   removeBook = (id) => {
     const books = this.getBooks();
     const newBooks = books.filter((book) => book.id.toString() !== id);
-    localStorage.setItem(this.books, JSON.stringify(newBooks));
+    localStorage.setItem('books', JSON.stringify(newBooks));
     document.querySelector(`#container${id}`).remove();
   };
 
@@ -48,13 +47,15 @@ class Book {
     let booksElement = '';
     for (let i = 0; i < books.length; i += 1) {
       booksElement = `
-      <div id="container${books[i].id}">
+      <div id="container${books[i].id}" class="booksList">
+              <div class="inputs">
               <p id="display-title">${books[i].title}</p>
               <p id="display-author">${books[i].author}</p>
+              </div>
               <button type="button" id="${books[i].id}" class ="remove" 
               >Remove</button>
-              <hr>
             </div>
+            <hr>
     `;
       booksSection.appendChild(booksList);
       booksList.innerHTML += booksElement;
@@ -71,11 +72,11 @@ class Book {
   };
 }
 
-const book = new Book(titlei.value, authori.value, 'books');
+const book = new Book(titlei.value, authori.value);
 
 bookForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const book = new Book(titlei.value, authori.value, 'books');
+  const book = new Book(titlei.value, authori.value);
   const { title, author } = book;
   const id = Math.round(Math.random() * 10000000);
 
