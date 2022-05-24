@@ -2,3 +2,29 @@
   padding: 0;
   margin: 0;
 }
+
+h1 {
+  font-size: 3.125rem;
+  text-align: center;
+}
+
+main { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#books {
+  height: 18.75rem;
+}
+
+.whole-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title {
+  margin: .9375rem 0;
+}
