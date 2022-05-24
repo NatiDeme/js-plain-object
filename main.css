@@ -9,7 +9,7 @@ h1 {
   margin: 10px 0;
 }
 
-main { 
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,25 +50,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .title {
-  margin: .9375rem 0;
+  margin: 0.9375rem 0;
 }
 
 .bookForm {
- display: flex;
- align-content: center;
+  display: flex;
+  align-content: center;
 }
 
 .bookForm button {
- margin-top: .625rem;
- padding: .4375rem;
- background-color: black;
- color: azure;
- border-radius: .25rem;
- width: 6.25rem;
+  margin-top: 0.625rem;
+  padding: 0.4375rem;
+  background-color: black;
+  color: azure;
+  border-radius: 0.25rem;
+  width: 6.25rem;
 }
 
 .bookForm input {
