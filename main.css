@@ -4,8 +4,9 @@
 }
 
 h1 {
-  font-size: 3.125rem;
+  font-size: 2.8rem;
   text-align: center;
+  margin: 10px 0;
 }
 
 main { 
@@ -54,4 +55,27 @@ main {
 
 .title {
   margin: .9375rem 0;
+}
+
+.bookForm {
+ display: flex;
+ align-content: center;
+}
+
+.bookForm button {
+ margin-top: .625rem;
+ padding: .4375rem;
+ background-color: black;
+ color: azure;
+ border-radius: .25rem;
+ width: 6.25rem;
+}
+
+.bookForm input {
+  background-color: darkgray;
+  height: 30px;
+}
+
+.bookForm input::placeholder {
+  color: black;
 }
