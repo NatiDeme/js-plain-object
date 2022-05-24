@@ -14,8 +14,35 @@ main {
   align-items: center;
 }
 
+.booksList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  height: 50px;
+}
+
+.booksList p {
+  font-size: 25px;
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+}
+
+.remove {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
 #books {
   height: 18.75rem;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 4px;
 }
 
 .whole-form form {
