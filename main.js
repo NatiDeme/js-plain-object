@@ -92,6 +92,8 @@ window.addEventListener('DOMContentLoaded', book.showBook());
 
 const formSection = document.querySelector('.whole-form');
 const toAdd = document.querySelector('#toAdd');
+const contactInfo = document.querySelector('#contact');
+const contactSection = document.querySelector('.contact-section');
 const booksSection = document.querySelector('#books');
 const headText = document.querySelector('#headText');
 const checkList = document.querySelector('#list');
@@ -101,7 +103,14 @@ toAdd.addEventListener('click', () => {
   headText.style.display = 'none';
   checkList.style.color = 'black';
   toAdd.style.color = 'blue';
+  contactInfo.style.color = 'black';
 });
 checkList.addEventListener('click', () => {
   window.location.reload();
+});
+contactInfo.addEventListener('click', () => {
+  booksSection.style.display = 'none';
+  contactSection.style.display = 'block';
+  contactInfo.style.color = 'blue';
+  checkList.style.color = 'black';
 });

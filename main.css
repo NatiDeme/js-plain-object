@@ -100,3 +100,7 @@ nav ul {
   text-direction: underlined;
   color: blue;
 }
+
+.contact-section {
+  display: none;
+}
