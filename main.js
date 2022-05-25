@@ -104,6 +104,7 @@ toAdd.addEventListener('click', () => {
   checkList.style.color = 'black';
   toAdd.style.color = 'blue';
   contactInfo.style.color = 'black';
+  contactSection.style.display = 'none';
 });
 checkList.addEventListener('click', () => {
   window.location.reload();
@@ -113,4 +114,6 @@ contactInfo.addEventListener('click', () => {
   contactSection.style.display = 'block';
   contactInfo.style.color = 'blue';
   checkList.style.color = 'black';
+  formSection.style.display = 'none';
+  toAdd.style.color = 'black';
 });
