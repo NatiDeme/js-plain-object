@@ -102,3 +102,6 @@ toAdd.addEventListener('click', () => {
   checkList.style.color = 'black';
   toAdd.style.color = 'blue';
 });
+checkList.addEventListener('click', () => {
+  window.location.reload();
+});
