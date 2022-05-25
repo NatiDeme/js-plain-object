@@ -89,6 +89,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   padding-top: 15px;
+  border: 1px solid black;
 }
 
 nav ul {
@@ -110,4 +111,7 @@ nav ul {
 .copyright {
   text-align: center;
   font-weight: 600;
+  border: 1px solid black;
+  height: 30px;
+  padding-top: 8px;
 }
