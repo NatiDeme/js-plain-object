@@ -89,3 +89,16 @@ bookForm.addEventListener('submit', (e) => {
   window.location.reload();
 });
 window.addEventListener('DOMContentLoaded', book.showBook());
+
+const formSection = document.querySelector('.whole-form');
+const toAdd = document.querySelector('#toAdd');
+const booksSection = document.querySelector('#books');
+const headText = document.querySelector('#headText');
+const checkList = document.querySelector('#list');
+toAdd.addEventListener('click', () => {
+  formSection.style.display = 'block';
+  booksSection.style.display = 'none';
+  headText.style.display = 'none';
+  checkList.style.color = 'black';
+  toAdd.style.color = 'blue';
+});

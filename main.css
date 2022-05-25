@@ -52,6 +52,10 @@ main {
   align-items: center;
 }
 
+.whole-form {
+  display: none;
+}
+
 .title {
   margin: 0.9375rem 0;
 }
@@ -77,4 +81,22 @@ main {
 
 .bookForm input::placeholder {
   color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display:flex;
+  gap: 10px
+}
+
+#list {
+  text-direction: underlined;
+  color: blue;
 }
