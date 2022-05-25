@@ -3,26 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="10">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div><h2>Awesome Books</h2></div>
+            <div>
+                <ul class="header-menu">
+                    <li id="list">List</li>
+                    <li id="toAdd">Add new</li>
+                    <li id="contact">Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
-        <h1>Awesome Books</h1>
+        <h1 class="mainHead">All Awesome Books</h1>
         <section id="books">
 
         </section>
         <section class="whole-form">
-            <h1>Add a new book</h1>
+            <h2>Add a new book</h2>
             <form action="click" class="bookForm">
                 <input type="text" class="title" placeholder="Title">
                 <input type="text" id="author" placeholder="Author">
                 <button type="submit" id="add">Add</button>
             </form>
         </section>
+        <section class="contact-section">
+        <h2>Contact Information</h2>
+        <p>Do you have any questions? 
+         Do you just want say "Hello"?</p>
+         <P>You can reach out to us!</P>
+         <ul>
+             <li>
+                 Our email: Fromtc2k42@gmail.com
+             </li>
+             <li>
+              Our phone: +4489049302042
+             </li>
+             <li>
+                 Our address: 42 below ground, Above.CR, 5rl 444
+             </li>
+        </ul>
+        </section>
     </main>
+    <footer class="copyright">Copyright.io
+    </footer>
 </body>
 </html>

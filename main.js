@@ -89,3 +89,32 @@ bookForm.addEventListener('submit', (e) => {
   window.location.reload();
 });
 window.addEventListener('DOMContentLoaded', book.showBook());
+
+const formSection = document.querySelector('.whole-form');
+const toAdd = document.querySelector('#toAdd');
+const contactInfo = document.querySelector('#contact');
+const contactSection = document.querySelector('.contact-section');
+const mainHead = document.querySelector('.mainHead');
+const booksSection = document.querySelector('#books');
+const checkList = document.querySelector('#list');
+toAdd.addEventListener('click', () => {
+  formSection.style.display = 'block';
+  booksSection.style.display = 'none';
+  checkList.style.color = 'black';
+  toAdd.style.color = 'blue';
+  contactInfo.style.color = 'black';
+  contactSection.style.display = 'none';
+  mainHead.style.display = 'none';
+});
+checkList.addEventListener('click', () => {
+  window.location.reload();
+});
+contactInfo.addEventListener('click', () => {
+  booksSection.style.display = 'none';
+  contactSection.style.display = 'block';
+  contactInfo.style.color = 'blue';
+  checkList.style.color = 'black';
+  formSection.style.display = 'none';
+  toAdd.style.color = 'black';
+  mainHead.style.display = 'none';
+});
