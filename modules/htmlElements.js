@@ -12,5 +12,5 @@ const dateTime = document.querySelector('.date_time');
 
 export {
   titlei, authori, bookForm, formSection, toAdd, contactInfo, contactSection,
-  mainHead, booksSection, checkList, dateTime
+  mainHead, booksSection, checkList, dateTime,
 };

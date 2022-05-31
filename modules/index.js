@@ -1,6 +1,6 @@
 import {
   titlei, authori, bookForm, formSection, toAdd, contactInfo, contactSection,
-  mainHead, booksSection, checkList, dateTime
+  mainHead, booksSection, checkList, dateTime,
 } from './htmlElements.js';
 import luxon from './luxon.js';
 
