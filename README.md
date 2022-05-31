@@ -3,7 +3,7 @@
 
 # Awesome Books Pair programming!
 
-> This is a project create by me and @NatiDeme!
+> This is a project create by @CrystallineButterfly and @NatiDeme!
 
 
 ## Built With
