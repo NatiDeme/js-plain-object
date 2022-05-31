@@ -3,7 +3,7 @@
 
 # Awesome Books Pair programming!
 
-> This is a project create by me and @NatiDeme!
+> This is a project create by @CrystallineButterfly and @NatiDeme!
 
 
 ## Built With
@@ -20,14 +20,14 @@
 
 ## Getting Started
 
-# This is a project with the API theme of favorite books and storage of those values on the interface and within local storage!
+This is a project with the API theme of favorite books and storage of those values on the interface and within local storage!
 
-# If you would like to clone it, go ahead and copy the ssh or https from the code drop down bar, and then make it your own!
+If you would like to clone it, go ahead and copy the ssh or https from the code drop down bar, and then make it your own!
 Either that or a fork!
 
 ### Prerequisites
 
-# Node.JS/ the Vanilla way. 
+Node.JS/ the Vanilla way. 
 
 
 ## Authors
@@ -35,8 +35,8 @@ Either that or a fork!
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/NatiDeme)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Twitter: [@twitterhandle](https://twitter.com/NatiDemelash)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/NatnaelDemelash)
 
 👤 **Author2**
 
@@ -54,12 +54,4 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
