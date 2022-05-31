@@ -16,6 +16,11 @@ main {
   height: 40rem;
 }
 
+.date_time {
+  margin-left: 50%;
+  margin-top: 5px;
+}
+
 .booksList {
   display: flex;
   justify-content: space-around;

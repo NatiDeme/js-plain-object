@@ -1,6 +1,9 @@
-const titlei = document.querySelector('.title');
-const authori = document.querySelector('#author');
-const bookForm = document.querySelector('.bookForm');
+import {
+  titlei, authori, bookForm, formSection, toAdd, contactInfo, contactSection,
+  mainHead, booksSection, checkList, dateTime
+} from './htmlElements.js';
+import luxon from './luxon.js';
+
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -90,13 +93,6 @@ bookForm.addEventListener('submit', (e) => {
 });
 window.addEventListener('DOMContentLoaded', book.showBook());
 
-const formSection = document.querySelector('.whole-form');
-const toAdd = document.querySelector('#toAdd');
-const contactInfo = document.querySelector('#contact');
-const contactSection = document.querySelector('.contact-section');
-const mainHead = document.querySelector('.mainHead');
-const booksSection = document.querySelector('#books');
-const checkList = document.querySelector('#list');
 toAdd.addEventListener('click', () => {
   formSection.style.display = 'block';
   booksSection.style.display = 'none';
@@ -118,3 +114,4 @@ contactInfo.addEventListener('click', () => {
   toAdd.style.color = 'black';
   mainHead.style.display = 'none';
 });
+dateTime.innerText = luxon.DateTime.now().setLocale('en-US').toLocaleString(luxon.DateTime.DATETIME_FULL_WITH_SECONDS);
