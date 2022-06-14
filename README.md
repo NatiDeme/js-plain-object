@@ -3,6 +3,8 @@
 
 # Awesome Books Pair programming!
 
+This project was done as a pair programming activity at Microverse. The project mainly outlines the implementation of JavaScript Class which was in use to perform certain methods like Adding Books, Deleting Books, Showing list of Books and finaly performing all activities on Local Storage.
+
 > This is a project create by @CrystallineButterfly and @NatiDeme!
 
 
